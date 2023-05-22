@@ -24,7 +24,7 @@
     left: calc(50% - 42.5px);
     width: 85px;
     height: 85px;
-    border: 2px solid $color-white;
+    border: 4px solid $color-white;
     border-radius: 50%;
     overflow: hidden;
   }
@@ -43,7 +43,7 @@
     justify-items: center;
     width: 100%;
     height: 100%;
-    padding: 17px 15px 20px;
+    padding: 17px 0 0;
   }
 
   &__title {
@@ -51,11 +51,11 @@
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: $weight-title;
-    color: $color-black;
+    color: $color-secondary;
 
     & span {
       font-weight: $weight-paragraph;
-      color: $color-fourth;
+      color: $color-tertiary;
       margin-left: 8px;
     }
   }
@@ -65,7 +65,7 @@
     font-size: 1.3rem;
     line-height: 1.8rem;
     font-weight: $weight-paragraph;
-    color: $color-fourth;
+    color: $color-tertiary;
   }
 
   &__grid {
@@ -75,6 +75,8 @@
     place-content: center;
     place-items: center;
     width: 100%;
+    padding: 20px 15px 20px;
+    border-top: 1px solid rgba($color: $color-fourth, $alpha: 0.3);
   }
 
   &__info {
@@ -85,12 +87,14 @@
     margin: 0;
     font-size: 1.5rem;
     font-weight: $weight-title;
+    color: $color-secondary;
   }
 
   &__type {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.1rem;
     font-weight: $weight-paragraph;
-    color: $color-fourth;
+    color: $color-tertiary;
   }
 }
